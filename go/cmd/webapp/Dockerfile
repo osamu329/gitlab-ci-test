@@ -1,5 +1,5 @@
 FROM golang:1.12.5-stretch as builder
-RUN apt update && apt -y upgrade
+RUN apt-get update && apt-get -y upgrade
 COPY . ./cmd
 RUN go build ./go/cmd/webapp
 
