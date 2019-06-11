@@ -4,6 +4,7 @@ stages:
 test_job:
     type: test
     script:
+        - /usr/bin/env
         - go test ./go/.
     tags:
         - docker
