@@ -14,7 +14,7 @@ test:
 build:
     script:
         - go build ./go/...
-    actifacts:
+    artifacts:
         paths:
             - app.exe
         expire_in: 1 week
