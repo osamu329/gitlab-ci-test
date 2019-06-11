@@ -1,13 +1,13 @@
-variables:
-    PATH: "$PATH:$GOROOT/bin"
-    
 stages:
     - test
     - build
+
+before_script:
+    - export PATH=$PATH:$GOROOT/bin
+
 test:
     type: test
     script:
-        - export PATH=$PATH:$GOROOT/bin
         - go test ./go/...
     tags:
         - docker
