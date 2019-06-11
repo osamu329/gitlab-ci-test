@@ -1,7 +1,7 @@
 stages:
     - test
 
-test_job:
+test:
     type: test
     script:
         - echo PATH=$PATH
