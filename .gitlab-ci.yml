@@ -1,5 +1,5 @@
 variables:
-	PATH: "$PATH:$GOROOT/bin"
+    PATH: "$PATH:$GOROOT/bin"
     
 stages:
     - test
