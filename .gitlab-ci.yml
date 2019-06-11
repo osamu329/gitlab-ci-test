@@ -5,7 +5,7 @@ test_job:
     type: test
     script:
         - echo PATH=$PATH
-        - export PATH=$PATH:$GOPATH/bin
+        - export PATH=$PATH:$GOROOT/bin
         - echo PATH=$PATH
         - go test ./go/.
     tags:
