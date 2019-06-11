@@ -1,12 +1,21 @@
 stages:
     - test
-
+    - build
 test:
     type: test
     script:
         - echo PATH=$PATH
         - export PATH=$PATH:$GOROOT/bin
         - echo PATH=$PATH
-        - go test ./go/.
+        - go test ./go/...
     tags:
         - docker
+
+build:
+    script:
+        - go build ./go/...
+    actifacts:
+        paths:
+            - app.exe
+        expire_in: 1 week
+
