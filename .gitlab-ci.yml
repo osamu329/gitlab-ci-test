@@ -1,7 +1,7 @@
 variables:
-    PATH: "$PATH:$GOROOT/bin"
+	PATH: "$PATH:$GOROOT/bin"
     
-    stages:
+stages:
     - test
     - build
 test:
