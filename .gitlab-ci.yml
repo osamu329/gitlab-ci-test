@@ -17,6 +17,6 @@ build:
         - go build ./go/...
     artifacts:
         paths:
-            - app.exe
+            - app
         expire_in: 1 week
 
