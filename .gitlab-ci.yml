@@ -4,7 +4,7 @@ stages:
 test_job:
     type: test
     script:
-        - /usr/bin/env
+        - echo PATH=$PATH
         - go test ./go/.
     tags:
         - docker
