@@ -5,6 +5,8 @@ test_job:
     type: test
     script:
         - echo PATH=$PATH
+        - export PATH=$PATH:$GOPATH/bin
+        - echo PATH=$PATH
         - go test ./go/.
     tags:
         - docker
