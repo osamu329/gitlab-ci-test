@@ -1,3 +1,2 @@
 
-
-[Board](board)
+[Board](issue/boards)
