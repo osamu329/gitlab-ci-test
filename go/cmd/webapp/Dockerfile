@@ -1,6 +1,6 @@
 FROM golang:1.12.5-stretch as builder
 RUN apt-get update && apt-get -y upgrade
-COPY . ./cmd
+COPY . ./go/cmd
 RUN go build ./go/cmd/webapp
 
 FROM amd64/debian:9.8 as production
